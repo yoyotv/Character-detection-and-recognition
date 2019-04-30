@@ -1,10 +1,13 @@
 # Character-detection-and-recognition
 Simple way to detect the character or numbers and recognize them.
 
+## Why
+
+The general way to detect and classify is to merge them int one process, e.g. RCNN, YOLO. But we need to find the dataset, which has the position label information. We have like MS-COCO, but it is for for the charecter and number! So I am thinking I could first develop a system can recognize the word in a restricted area. The restricted area can afford the deformation characters or  numbers.
 
 ## Approach 
 
-This repository is focus on recognizing the deformation characters and numbers.
+This repository is focus on detecting and recognizing the deformation characters and numbers.
 
   Firsy of all, we apply the simplest strategy to detect the characters and numbers, which is the edge detection. By doing so, we are able to find where is the ROI (Region of interest). Also we have to use some algorithm to filter some interference. e.g., opencv cv2.dilate.
   
@@ -85,3 +88,12 @@ https://drive.google.com/open?id=1BybZGI1q-F8BbTDDZ4Pu6OgASW4e3Fn9
 
 2. Character a,b,...z related to label 36~61.
 
+## To do 
+
+We could detect the restricted area by some dataset like
+
+1. [MSRA-TD500](http://www.iapr-tc11.org/mediawiki/index.php?title=MSRA_Text_Detection_500_Database_(MSRA-TD500))
+
+2. [KAIST Scene Text Database](KAIST Scene Text Database)
+
+3. [Natural Environment OCR Dataset](http://www.iapr-tc11.org/mediawiki/index.php?title=NEOCR:_Natural_Environment_OCR_Dataset)
