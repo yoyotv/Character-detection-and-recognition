@@ -77,3 +77,11 @@ Charactee part
 
 https://drive.google.com/open?id=1BybZGI1q-F8BbTDDZ4Pu6OgASW4e3Fn9
 
+## Labeling
+
+1. Number 0~9 related to label 0~9.
+
+2. Character A,B,...Z related to label 10~35.
+
+2. Character a,b,...z related to label 36~61.
+
