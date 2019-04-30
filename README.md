@@ -16,7 +16,7 @@ It is able to switch the model to increase the performance. e.g. Resnet, Mobilen
 
 Here is the flow chart.
 
-   <img src="https://raw.githubusercontent.com/yoyotv/Raspberry/master/pictures/flow_chart.jpg" >
+   <img src="https://raw.githubusercontent.com/yoyotv/Character-detection-and-recognition/master/figures/cha.jpg" >
   
 ## GET started
 
