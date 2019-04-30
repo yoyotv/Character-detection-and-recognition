@@ -56,7 +56,9 @@ Charactee part
 
 ## Demo
 
+1. That's choose aa.jpg as our demo picture. Set the code in detect.py line 6.
 
+2. run ``` sh test.sh```
 
 ## Models
 
