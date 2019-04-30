@@ -72,12 +72,8 @@ Charactee part
 <img src="https://raw.githubusercontent.com/yoyotv/Character-detection-and-recognition/master/figures/result.JPG" >
 
 7. As you can see, the answer of the first character is "H", but because of the similarity between rotated "I" and rotated "H", so the classifier went wrong.
+
 ## Models
 
-https://drive.google.com/open?id=18LOMbMRIF2w6etZaqH3X9DfTnhorMWIs
+https://drive.google.com/open?id=1BybZGI1q-F8BbTDDZ4Pu6OgASW4e3Fn9
 
-## Anything else?
-
-* Train more models to play.
-
-* Train the model with AM-softmax so that we could evaluate the angle between faces to identify person.
