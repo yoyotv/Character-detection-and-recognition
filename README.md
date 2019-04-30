@@ -60,7 +60,18 @@ Charactee part
 
 2. Run ``` sh test.sh```
 
-3. You should see <img src="https://raw.githubusercontent.com/yoyotv/Character-detection-and-recognition/master/figures/edge.jpg"
+3. You should see 
+
+<img src="https://raw.githubusercontent.com/yoyotv/Character-detection-and-recognition/master/figures/edge.jpg" >
+
+4. Keep press "Enter" to enable system.
+
+5. As you press "Enter", you should see the character keep rotating.
+
+6. The final determine should look like this
+<img src="https://raw.githubusercontent.com/yoyotv/Character-detection-and-recognition/master/figures/result.JPG
+" >
+
 
 ## Models
 
