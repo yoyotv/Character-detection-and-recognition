@@ -4,16 +4,11 @@ Simple way to detect the character or numbers and recognize them.
 
 ## Approach 
 
-Using the caffe engine to extract the feature.
+This repository is focus on recognizing the deformation characters and numbers.
 
-This repository does not aplly the caffe deploy.
-
-In stead of the [common way](https://github.com/BVLC/caffe/wiki/Using-a-Trained-Network:-Deploy) that extracts model feature in caffe, I modify caffe/tools/extract_features.cpp to save feature in form txt directly.
-
-Combined with the c++ in order to implement an application on Raspberry-pi identify the face.
-
-It is able to switch the model to increase the performance. e.g. Resnet, Mobilenet.
-
+  Firsy of all, we apply the simplest strategy to detect the characters and numbers, which is the edge detection. By doing so, we are able to find where is the ROI (Region of interest). Also we have to use some algorithm to filter some interference. e.g., opencv cv2.dilate.
+  After we obtain the characters and numbers, we feed them into classification network. In this repository, we utilize ResNet20. Then we are able to see the results!
+  
 Here is the flow chart.
 
    <img src="https://raw.githubusercontent.com/yoyotv/Character-detection-and-recognition/master/figures/cha.jpg" >
@@ -24,7 +19,7 @@ You have to install
 
 1. [Opencv](https://opencv.org/)  for read image and detect face, I use 2.4.9
 
-2.  [Caffe](https://caffe.berkeleyvision.org/) for extracting the feature. There is a good step by step [tutorial](https://github.com/leo2105/Caffe-installation-Raspberry-Pi-3)  to install caffe on Raspberry by leo2105
+2.  [Caffe](https://github.com/BVLC/caffe) for classify.
 
 ## Installation
 
@@ -41,27 +36,11 @@ You have to install
 
 5. Finished!
 
-## Tutorial
+## Tricks
 
-#### We can enjoy the face identification system in just one command!
+1. Detect : Assume that the different word is not connected, we can acquire the word by connect every bright pixel which is next to one another. E.g., if the bright pixels A is not in the 9 square area of bright pixel B, then we could say that these two pixels are not belong to the same characater or number
 
-1. First of all, run
-
-```
-sh Desktop/Face_identification_Raspberry_pi/run.sh
-```
-2. Shell will compile evaluate.cpp and detect.cpp, after that it will create two folders named Record and Current, respectively.
-
-3. Shell then enable the detect application, the detected face will be store at folder "Current".
-
-4. Caffe engine reads the face and extracts the feature then store it at caffe/models/face_id/features.
-
-5. Evaluate application compare the L2 distance between the database and the feature.
-
-6. If the system identified the face successfully, the log in information and the face will be recorded into log.txt and fold "Record", respectively.
-
-7. Whether the system identified the face successfully or not, the system will go back to 3.
-
+2. Classify : Because there will be some character is deformation, it is hard for classifier to predict the right answer. e.g., number "3" is  nearly the same as character "w" in -90 degree. In order to resolve this scenario, the classifier will keep rotate the image from -90 degree to 90 degree if the probability of prediction is lower than 90%. This process will keep excuting until one of the prediction is higher than 90% or none of the prediction is higher than 90%, if the result is none of the prediction is higher than 90%, the system will choose the highest one as the final prediction.
 
 ## Switch the extraction model 
 
