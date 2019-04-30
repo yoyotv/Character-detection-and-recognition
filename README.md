@@ -71,7 +71,7 @@ Charactee part
 6. The final determine should look like this
 <img src="https://raw.githubusercontent.com/yoyotv/Character-detection-and-recognition/master/figures/result.JPG" >
 
-
+7. As you can see, the answer of the first character is "H", but because of the similarity between rotated "I" and rotated "H", so the classifier went wrong.
 ## Models
 
 https://drive.google.com/open?id=18LOMbMRIF2w6etZaqH3X9DfTnhorMWIs
