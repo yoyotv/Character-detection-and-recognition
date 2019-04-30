@@ -7,6 +7,7 @@ Simple way to detect the character or numbers and recognize them.
 This repository is focus on recognizing the deformation characters and numbers.
 
   Firsy of all, we apply the simplest strategy to detect the characters and numbers, which is the edge detection. By doing so, we are able to find where is the ROI (Region of interest). Also we have to use some algorithm to filter some interference. e.g., opencv cv2.dilate.
+  
   After we obtain the characters and numbers, we feed them into classification network. In this repository, we utilize ResNet20. Then we are able to see the results!
   
 Here is the flow chart.
