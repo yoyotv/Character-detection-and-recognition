@@ -58,7 +58,9 @@ Charactee part
 
 1. That's choose aa.jpg as our demo picture. Set the code in detect.py line 6.
 
-2. run ``` sh test.sh```
+2. Run ``` sh test.sh```
+
+3. You should see <img src="https://raw.githubusercontent.com/yoyotv/Character-detection-and-recognition/master/figures/edge.jpg"
 
 ## Models
 
