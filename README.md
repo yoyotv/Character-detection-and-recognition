@@ -28,8 +28,7 @@ You have to install
 ## Installation
 
 1. Clone the repository
-  ```Shell
-  # Make sure to clone with --recursive
+  ```
   git clone https://github.com/yoyotv/Character-detection-and-recognition.git
   ```
 
