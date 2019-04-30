@@ -94,6 +94,6 @@ We could detect the restricted area by some dataset like
 
 1. [MSRA-TD500](http://www.iapr-tc11.org/mediawiki/index.php?title=MSRA_Text_Detection_500_Database_(MSRA-TD500))
 
-2. [KAIST Scene Text Database](KAIST Scene Text Database)
+2. [KAIST Scene Text Database](http://www.iapr-tc11.org/mediawiki/index.php?title=KAIST_Scene_Text_Database)
 
 3. [Natural Environment OCR Dataset](http://www.iapr-tc11.org/mediawiki/index.php?title=NEOCR:_Natural_Environment_OCR_Dataset)
