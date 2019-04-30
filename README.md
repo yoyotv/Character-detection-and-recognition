@@ -97,3 +97,7 @@ We could detect the restricted area by some dataset like
 2. [KAIST Scene Text Database](http://www.iapr-tc11.org/mediawiki/index.php?title=KAIST_Scene_Text_Database)
 
 3. [Natural Environment OCR Dataset](http://www.iapr-tc11.org/mediawiki/index.php?title=NEOCR:_Natural_Environment_OCR_Dataset)
+
+Use the position label to obtain the restricted area and feed it into our system, then compare the result with faster RCNN.
+
+By doing so, we could increase the number of our dataset in classification.
