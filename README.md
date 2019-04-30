@@ -69,8 +69,7 @@ Charactee part
 5. As you press "Enter", you should see the character keep rotating.
 
 6. The final determine should look like this
-<img src="https://raw.githubusercontent.com/yoyotv/Character-detection-and-recognition/master/figures/result.JPG
-" >
+<img src="https://raw.githubusercontent.com/yoyotv/Character-detection-and-recognition/master/figures/result.JPG" >
 
 
 ## Models
